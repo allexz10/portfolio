@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.69dbbddd.chunk.css",
+    "main.js": "/portfolio/static/js/main.74a9c8f8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.74a9c8f8.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.9174579f.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.9174579f.js.map",
+    "static/js/2.bf12d25f.chunk.js": "/portfolio/static/js/2.bf12d25f.chunk.js",
+    "static/js/2.bf12d25f.chunk.js.map": "/portfolio/static/js/2.bf12d25f.chunk.js.map",
+    "static/js/3.69f5e453.chunk.js": "/portfolio/static/js/3.69f5e453.chunk.js",
+    "static/js/3.69f5e453.chunk.js.map": "/portfolio/static/js/3.69f5e453.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.69dbbddd.chunk.css.map": "/portfolio/static/css/main.69dbbddd.chunk.css.map",
+    "static/js/2.bf12d25f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bf12d25f.chunk.js.LICENSE.txt",
+    "static/media/Behance.110ab3a9.svg": "/portfolio/static/media/Behance.110ab3a9.svg",
+    "static/media/Figma.357fe426.svg": "/portfolio/static/media/Figma.357fe426.svg",
+    "static/media/Linkendl.70593524.svg": "/portfolio/static/media/Linkendl.70593524.svg",
+    "static/media/arrow-right.2ece33ff.svg": "/portfolio/static/media/arrow-right.2ece33ff.svg",
+    "static/media/avatar.4784d69e.png": "/portfolio/static/media/avatar.4784d69e.png",
+    "static/media/btnClose.0bb8803c.svg": "/portfolio/static/media/btnClose.0bb8803c.svg",
+    "static/media/btnIcon.868ea8ae.svg": "/portfolio/static/media/btnIcon.868ea8ae.svg",
+    "static/media/buttons.b6ff0b70.png": "/portfolio/static/media/buttons.b6ff0b70.png",
+    "static/media/code.8985ab16.svg": "/portfolio/static/media/code.8985ab16.svg",
+    "static/media/collection.cc0ffe98.svg": "/portfolio/static/media/collection.cc0ffe98.svg",
+    "static/media/color-1.c304b3b8.png": "/portfolio/static/media/color-1.c304b3b8.png",
+    "static/media/color-2.86524ca0.png": "/portfolio/static/media/color-2.86524ca0.png",
+    "static/media/device-mobile.58007a9b.svg": "/portfolio/static/media/device-mobile.58007a9b.svg",
+    "static/media/fonts.0a1242f7.png": "/portfolio/static/media/fonts.0a1242f7.png",
+    "static/media/projectImage.3f6d62c6.png": "/portfolio/static/media/projectImage.3f6d62c6.png",
+    "static/media/speakerphone.d1a5d4a8.svg": "/portfolio/static/media/speakerphone.d1a5d4a8.svg",
+    "static/media/template.d9136a9b.svg": "/portfolio/static/media/template.d9136a9b.svg",
+    "static/media/user-add.7954fba1.svg": "/portfolio/static/media/user-add.7954fba1.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9174579f.js",
+    "static/js/2.bf12d25f.chunk.js",
+    "static/css/main.69dbbddd.chunk.css",
+    "static/js/main.74a9c8f8.chunk.js"
+  ]
+}
