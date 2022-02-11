@@ -3,6 +3,7 @@
   max-width: 1155px;
   width: 100%;
   margin: 0 auto;
+
   &__title {
     font-family: "DM Sans", sans-serif;
     font-weight: 500;
@@ -11,6 +12,7 @@
     letter-spacing: 0.25px;
     margin-bottom: 64px;
   }
+
   &__image {
     object-fit: cover;
     width: 100%;
@@ -27,6 +29,7 @@
     fill: #ffffff;
     transition: all ease 0.5s;
   }
+
   &__button {
     text-decoration: none;
     display: flex;
@@ -42,19 +45,10 @@
     margin: 0 auto;
     transition: all ease-in 0.5s;
     background-color: #5c62ec;
-    padding: 16px 22px;
+    padding: 16px 20px;
     position: relative;
     margin-bottom: 128px;
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../../assets/images/arrow-right.svg");
-      top: 16px;
-      right: 14px;
-      object-fit: cover;
-      width: 16px;
-      height: 15px;
-    }
+
     &:hover {
       background-color: transparent;
       border: 2px solid #5c62ec;
@@ -62,4 +56,28 @@
   }
 }
 
+@media only screen and (max-width: 426px) {
+  .projects {
+    margin-bottom: 64px;
 
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__image {
+      margin-bottom: 15px;
+      &:last-child {
+        margin-bottom: 24px;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -10,9 +10,11 @@
   width: 100%;
   margin-bottom: 128px;
   background-color: #1c1e22;
+
   &__image {
     object-fit: cover;
     max-width: 326px;
+    width: 100%;
     border-radius: 8px;
     height: auto;
   }
@@ -26,19 +28,22 @@
       font-weight: 500;
       font-size: 48px;
       line-height: 57px;
-      margin-bottom: 32px;
+      margin-bottom: 28px;
     }
+
     &__text {
       font-size: 16px;
       line-height: 28px;
       letter-spacing: 0.44px;
       font-weight: 400;
-      margin-bottom: 32px;
+      margin-bottom: 12px;
     }
+
     &__button {
-      padding: 16px 0px 16px 20px;
+      padding: 16px 0px 16px 25px;
       cursor: pointer;
       border-radius: 5px;
+      margin-top: 24px;
       font-weight: 500;
       font-size: 16px;
       line-height: 16px;
@@ -64,23 +69,27 @@
   justify-content: center;
   margin: 0 auto;
   margin-bottom: 128px;
+
   .image {
     object-fit: cover;
-    max-width: 380px;
+    max-width: 420px;
     border-radius: 8px;
     height: auto;
   }
+
   .block {
     font-family: "DM Sans", sans-serif;
     color: #ffffff;
     max-width: 568px;
     width: 100%;
+
     &__title {
       font-weight: 500;
       font-size: 48px;
       line-height: 57px;
       margin-bottom: 24px;
     }
+
     &__text {
       font-size: 16px;
       line-height: 28px;
@@ -88,12 +97,14 @@
       font-weight: 400;
       margin-bottom: 14px;
     }
+
     &__button {
       transition: all ease-in 0.5s;
       color: #5c62ec;
       &--icon {
         display: none;
       }
+
       &:hover {
         color: #85bfd1;
       }
@@ -106,6 +117,7 @@
   margin-bottom: 128px;
   color: #ffffff;
   font-family: "DM Sans", sans-serif;
+
   &__title {
     font-weight: 500;
     font-size: 34px;
@@ -114,19 +126,23 @@
     text-align: center;
     margin-bottom: 60px;
   }
+
   &__wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fill, 356px);
     gap: 24px;
     justify-content: center;
   }
+
   &__content {
     background-color: #1c1e22;
     padding: 24px;
     border-radius: 8px;
+
     &--image {
       margin-bottom: 16px;
     }
+
     &--title {
       margin-bottom: 10px;
       font-weight: 500;
@@ -134,11 +150,77 @@
       line-height: 40px;
       letter-spacing: 0.25px;
     }
+
     &--text {
       font-weight: 400;
       font-size: 16px;
       line-height: 28px;
       letter-spacing: 0.44px;
+    }
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .about {
+    padding: 16px;
+    margin-bottom: 64px;
+
+    .block {
+      &__title {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .aboutme {
+    margin-bottom: 64px;
+    gap: 24px;
+
+    .block {
+      &__title {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        letter-spacing: 0.25px;
+      }
+    }
+  }
+
+  .skills {
+    margin-bottom: 64px;
+
+    &__content {
+      padding: 16px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__content--title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 0.15px;
+    }
+
+    &__content--text {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.25px;
     }
   }
 }

@@ -1,5 +1,6 @@
 import './Projects.scss';
 import projectImage from '../../assets/images/projectImage.png';
+import arrowRight from '../../assets/images/arrow-right.svg';
 
 const Projects = () => (
   <section className="projects">
@@ -16,7 +17,7 @@ const Projects = () => (
     </div>
     <a className="projects__button" href="https://www.behance.net">
       Ver más en Behance
-
+      <img src={arrowRight} alt="arrowImg" style={{ paddingLeft: '5px' }} />
     </a>
   </section>
 );

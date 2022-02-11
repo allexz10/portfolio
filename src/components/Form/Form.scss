@@ -7,18 +7,22 @@
   border-radius: 8px;
   margin: 0 auto;
   font-family: "DM Sans", sans-serif;
+
   .input__wrapper {
     display: grid;
     gap: 8px;
     margin-bottom: 24px;
   }
+
   &__label {
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
     text-align: left;
     letter-spacing: 0.44px;
+    cursor: pointer;
   }
+
   &__input {
     padding: 16px 20px;
     border-radius: 8px;
@@ -28,27 +32,29 @@
     font-weight: 400;
     font-size: 16px;
     color: #a0a0a1;
-
     letter-spacing: 0.44px;
     outline: none;
     transition: all ease 0.2s;
+
     &:focus {
       border: 1px solid transparent;
       box-shadow: 0 0 0 0.1rem #ffffff;
     }
+
     &::placeholder {
       color: #a0a0a1;
       font-family: "DM Sans", sans-serif;
       font-weight: 400;
       font-size: 16px;
-
       letter-spacing: 0.44px;
     }
   }
+
   &__input--textarea {
     height: 150px;
     resize: none;
   }
+
   &__button {
     padding: 16px 8px;
     display: flex;
@@ -69,6 +75,7 @@
       border: 2px solid #ffffff;
     }
   }
+
   .error__message {
     font-size: 16px;
     line-height: 28px;
@@ -76,12 +83,13 @@
     text-align: left;
     color: #c72a3f;
   }
+
   &__modal {
     box-shadow: 0 1px 10px #1c1e22;
     padding: 25px;
     background-color: #26292d;
     max-width: 400px;
-    width: 100%;
+    width: calc(100% - 10%);
     border-radius: 8px;
     position: absolute;
     top: 40%;
@@ -94,12 +102,16 @@
       letter-spacing: -0.5px;
       margin-bottom: 10px;
     }
+    
     &--text {
       font-weight: 500;
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 24px;
       letter-spacing: 0.15px;
+      max-width: 300px;
+      width: 100%;
+      display: inline-flex;
     }
   }
 }

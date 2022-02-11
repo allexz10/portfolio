@@ -1,9 +1,9 @@
 import './Projects.scss';
-import projectImage from '../assets/images/projectImage.png';
-import fontsImage from '../assets/images/fonts.png';
-import colorA from '../assets/images/color-1.png';
-import colorB from '../assets/images/color-2.png';
-import buttonImage from '../assets/images/buttons.png';
+import projectImage from '../../assets/images/projectImage.png';
+import fontsImage from '../../assets/images/fonts.png';
+import colorA from '../../assets/images/color-1.png';
+import colorB from '../../assets/images/color-2.png';
+import buttonImage from '../../assets/images/buttons.png';
 
 const Projects = () => (
   <section className="projects">
@@ -36,10 +36,11 @@ const Projects = () => (
         en sus distintas escalas.
       </p>
       <p className="typography__text">
-        Esta tipografía está disponible de forma
-        gratuita en
+        Esta tipografía está disponible de forma gratuita en
         {' '}
-        <span><a href="https://fonts.google.com/">Google fonts.</a></span>
+        <span>
+          <a href="https://fonts.google.com/">Google fonts.</a>
+        </span>
       </p>
       <img className="typography__image" src={fontsImage} alt="fonts-img" />
     </div>
@@ -55,11 +56,10 @@ const Projects = () => (
       <img className="colors__image" src={colorB} alt="colorImg" />
     </div>
     <div className="buttons">
-      <h3 className="buttons__title">
-        Botones
-      </h3>
+      <h3 className="buttons__title">Botones</h3>
       <p className="buttons__text">
-        Los botones en sus diferentes escalas, tanto para movil como para escritorio.
+        Los botones en sus diferentes escalas, tanto para movil como para
+        escritorio.
       </p>
       <img className="buttons__image" src={buttonImage} alt="buttonsImg" />
     </div>

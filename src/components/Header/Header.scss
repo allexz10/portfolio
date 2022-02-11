@@ -1,24 +1,27 @@
 .header {
-  padding: 18px 0px;
   max-width: 1156px;
+  height: 68px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 128px;
+
   .logo {
     font-family: "Poppins", sans-serif;
+
     &__text {
       font-weight: 600;
       font-size: 24px;
       color: #ffffff;
-      line-height: 32px;
       padding-right: 10px;
     }
   }
+
   .navigation {
     max-width: 600px;
+
     &__link {
       text-decoration: none;
       font-family: "DM Sans", sans-serif;
@@ -29,45 +32,52 @@
       transition: all ease 0.5s;
       border-bottom: 3px solid transparent;
       padding-bottom: 3px;
+
       &:hover {
         color: #5c62ec;
       }
+
       &.active {
         border-bottom: 3px solid #5c62ec;
         color: #ffffff;
       }
     }
+
     &__link + .navigation__link {
       margin-left: 23px;
     }
   }
+
   .mobile__nav {
     display: none;
+    overflow-x: hidden;
 
     .mobile__button {
       background-color: #171718;
       border: none;
       cursor: pointer;
     }
+
     .nav__list {
-      padding: 30px;
-      display: none;
       position: absolute;
+      display: flex;
+      padding: 15px;
+      width: 100%;
       height: 100vh;
-      top: 0;
+      top: 70px;
       left: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 5;
+      margin-top: 20px;
+      z-index: 2;
       background-color: #171718;
       flex-direction: column;
       gap: 32px;
+      transform: translateX(-100%);
+      transition: all ease-out 0.5s;
 
-      transition: all ease 0.5s;
       &.active {
-        display: flex;
-        top: 80px;
+        transform: translateX(0%);
       }
+
       .navigation__link {
         font-weight: 400;
         margin: 0;
@@ -81,9 +91,19 @@
 
 @media only screen and (max-width: 568px) {
   .header {
+    margin-bottom: 32px;
+    .logo {
+      &__text {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.15px;
+      }
+    }
+
     .navigation {
       display: none;
     }
+
     .mobile__nav {
       display: block;
     }

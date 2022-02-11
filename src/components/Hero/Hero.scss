@@ -4,11 +4,12 @@
   max-width: 524px;
   width: 100%;
   flex-direction: column;
-  margin: 0 auto;  
+  margin: 0 auto;
   color: #ffffff;
   text-align: center;
   font-family: "DM Sans", sans-serif;
   margin-bottom: 290px;
+
   &__title {
     font-weight: 700;
     font-size: 60px;
@@ -16,9 +17,11 @@
     letter-spacing: -0.5px;
     margin-bottom: 20px;
   }
+
   &__title--option {
     color: #5c62ec;
   }
+
   &__subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -26,6 +29,7 @@
     letter-spacing: 0.15px;
     margin-bottom: 32px;
   }
+
   .button__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -34,12 +38,14 @@
     width: 100%;
     margin: 0 auto;
   }
+
   .button__icon {
     object-fit: cover;
     margin-right: 5px;
     fill: #ffffff;
     transition: all ease 0.5s;
   }
+
   &__button {
     padding: 16px 32px;
     cursor: pointer;
@@ -54,26 +60,94 @@
     justify-content: center;
     align-items: center;
     transition: all ease-in 0.5s;
+
     &--projects {
       background-color: #5c62ec;
       text-decoration: none;
+
       &:hover {
         background-color: transparent;
         border: 1px solid #5c62ec;
       }
     }
+
     &--cv {
       background-color: transparent;
       border: 1px solid #ffffff;
-      padding: 16px 22px;
+      padding: 14px 22px;
+
       &:hover {
         background-color: #ffffff;
         border: 1px solid transparent;
         color: #000000;
       }
+
       &:hover .button__icon {
         fill: #000000;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .hero {
+    &__title {
+      &:first-child {
+        margin-top: 70px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 474px) {
+  .hero {
+    &__title {
+      font-size: 46px;
+      line-height: 50px;
+      text-align: center;
+      letter-spacing: 0.25px;
+      white-space: nowrap;
+      &:first-child {
+        margin-top: 50px;
+      }
+    }
+
+    .button__wrapper {
+      gap: 16px;
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .hero {
+    margin-bottom: 128px;
+    &__title {
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: 0.25px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.15px;
+      margin-bottom: 24px;
+    }
+
+    &__button {
+      width: 180px;
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .hero {    
+    &__title {
+      font-size: 34px;
+      line-height: 32px;
     }
   }
 }

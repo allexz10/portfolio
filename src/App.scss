@@ -1,20 +1,28 @@
-body{
-    background-color: #1c1e22;
+body {
+  background-color: #1c1e22;
 }
-.container{
-    max-width: 1440px;
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 30px;
+  background-color: #171718;
+  margin: 0 auto;
+  position: relative;
+  
+  &::before {
+    position: absolute;
+    content: "";
+    top: 68px;
+    left: 0;
+    height: 1px;
     width: 100%;
-    padding: 0 30px;
-    background-color: #171718;
-    margin: 0 auto;
-    position: relative;
-    &::before{
-        position: absolute;
-        content: "";
-        top: 68px;
-        left: 0;
-        height: 1px;
-        width: 100%;
-        background-color: #26292D;
-    }  
+    background-color: #26292d;
+  }
+}
+
+@media only screen and (max-width: 763px) {
+  .container {
+    padding: 0 15px;
+  }
 }

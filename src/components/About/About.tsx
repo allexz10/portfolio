@@ -5,20 +5,30 @@ import arrowRight from '../../assets/images/arrow-right.svg';
 
 type Props = {
   title: string;
-  text: string;
+  paragraph1: string;
+  paragraph2?: string;
+  paragraph3?: string;
   buttonTitle: string;
   sectionStyles: string;
   link: string;
 };
 
 const About = ({
-  title, text, buttonTitle, sectionStyles, link,
+  title,
+  paragraph1,
+  paragraph2,
+  paragraph3,
+  buttonTitle,
+  sectionStyles,
+  link,
 }: Props) => (
   <section className={sectionStyles}>
     <img className="about__image image" src={avatar} alt="avatar-img" />
     <div className="block">
       <h2 className="block__title">{title}</h2>
-      <p className="block__text">{text}</p>
+      <p className="block__text">{paragraph1}</p>
+      <p className="block__text">{paragraph2}</p>
+      <p className="block__text">{paragraph3}</p>
       <Link
         className="block__button"
         to={link}

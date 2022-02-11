@@ -97,12 +97,12 @@ const Form = () => {
             )}
           </div>
           <div className="input__wrapper">
-            <label className="form__label" htmlFor="name">
-              Tu nombre
+            <label className="form__label" htmlFor="textarea">
+              Tu mensaje
             </label>
             <textarea
               className="form__input form__input--textarea"
-              id="name"
+              id="textarea"
               placeholder="Hey..."
               {...register('textarea', {
                 required: 'Este campo es obligatorio',

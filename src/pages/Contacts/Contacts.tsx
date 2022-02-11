@@ -1,4 +1,4 @@
-import Form from '../components/Form/Form';
+import Form from '../../components/Form/Form';
 import './Contacts.scss';
 
 const Contacts = () => (

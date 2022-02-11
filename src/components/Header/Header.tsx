@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import navigationTitles from '../../data/navigationTitles';
 import buttonIcon from '../../assets/images/btnIcon.svg';
 import buttonClose from '../../assets/images/btnClose.svg';
@@ -7,6 +7,19 @@ import './Header.scss';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+
+  const closeNavMenu = () => {
+    if (window.scrollY > 400) {
+      setOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', closeNavMenu);
+    return () => {
+      window.removeEventListener('scroll', closeNavMenu);
+    };
+  }, []);
 
   return (
     <header className="header">
@@ -24,7 +37,7 @@ const Header = () => {
           </NavLink>
         ))}
       </nav>
-      <div className="mobile__nav">
+      <div className="mobile__nav" onScroll={() => setOpen(false)}>
         <button className="mobile__button" onClick={() => setOpen(!open)}>
           <img
             className="button__icon"
