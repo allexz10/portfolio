@@ -2,7 +2,7 @@
 
 # Portfolio
 
-This is a project I undertook to advance my skills using [React.ts](https://reactjs.org/) and other parts of its ecosystem. 
+This is a project I undertook to advance my skills using [React.ts](https://reactjs.org/) and other parts of its ecosystem. The page has an adaptive layout that looks great both on the desktop and in the mobile version. 
 
 
 ![Header](https://github.com/allexz10/allexz10/blob/main/assets/portfolio.gif)
