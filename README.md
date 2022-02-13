@@ -15,7 +15,7 @@ This is a project I undertook to advance my skills using [React.ts](https://reac
 
 This project was created with Create React App
 
-[Figma](https://www.figma.com/community/file/1043975636941872336)
+[Figma](https://www.figma.com/community/file/1043975636941872336) - Portafolio Template
 
 React Hooks
 
